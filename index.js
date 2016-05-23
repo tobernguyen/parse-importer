@@ -4,7 +4,7 @@ const ParseConfig = require('./parse-config.js');
 
 var prompt = require('prompt');
 var Parse = require('parse/node');
-Parse.serverURL = PARSE_SERVER_URL;
+Parse.serverURL = ParseConfig.PARSE_SERVER_URL;
 Parse.initialize(ParseConfig.PARSE_APP_ID, ParseConfig.PARSE_JAVASCRIPT_KEY, ParseConfig.PARSE_MASTER_KEY);
 Parse.Cloud.useMasterKey();
 
